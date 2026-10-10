@@ -140,7 +140,7 @@ def predict(data_input: dict):
     }])
 
     # ML prediction
-    prediction = model.predict(model_input)[0]
+    prediction = round(model.predict(model_input)[0], 1)
 
     # Current buses
     current_buses = {
